@@ -75,7 +75,8 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season.capitalize}:"
     holiday.each {|holiday, supplies|
       word_day="#{holiday}"
-      word_day.gsub!
+      word_day.gsub!("_"," ")
+      
       prints "  "
     }
   }
