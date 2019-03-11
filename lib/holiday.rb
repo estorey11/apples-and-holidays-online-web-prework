@@ -76,8 +76,11 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each {|holiday, supplies|
       word_day="#{holiday}"
       word_day.gsub!("_"," ")
-      
-      prints "  "
+      word_day.split.map(&:capitalize).join(' ')
+      prints "  #{word_day}:"
+      supplies.each {|supplies|
+        
+      }
     }
   }
 end
