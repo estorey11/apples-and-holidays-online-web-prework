@@ -82,9 +82,9 @@ def all_supplies_in_holidays(holiday_hash)
       supplies.each {|supply|
         if i==0 
           i+=1 
-          prints " #{supply}"
+          print " #{supply}"
         else
-          prints ", #{supply}"
+          print ", #{supply}"
         end
       }
       puts ""
