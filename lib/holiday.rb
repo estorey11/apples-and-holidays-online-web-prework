@@ -53,9 +53,13 @@ def all_winter_holiday_supplies(holiday_hash)
   wint_array=[]
   holiday_hash.each {|season, holiday|
     if season==:winter
-      
+      season.each {|holiday, supplies|
+        wint_array << supplies
+      }
     end
   }
+  
+  wint_array
 end
 
 def all_supplies_in_holidays(holiday_hash)
